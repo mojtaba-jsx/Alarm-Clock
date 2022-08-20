@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: prompt;
+    src: url(./font/Prompt-Regular.ttf);
+}
+body , .container, .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: prompt;
+}
+body{
+    height: 100vh;
+    background-color:#4a98f7;
+}
+.container{
+    width: 450px;
+    background:#fff;
+    padding: 30px;
+    border-radius: 10px;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(16, 15, 15, 0.08);
+    background: rgba(16, 15, 15, 0.07);
+}
+select{
+background-color: #4a98f7;
+color: #fff;
+padding: 10px 10px;
+border-radius: 10px;
+font-family: prompt;
+}
+.container img{
+    width: 447px;
+    height: 342px;
+    margin-top: -28px;
+    border-radius: 10px;
+    opacity: 0.1;
+    
+}
+.container h1{
+    font-size: 40px;
+    margin: 30px 0;
+    letter-spacing: 10px;
+}
+.container .content{
+    width: 100%;
+    justify-content: space-between;
+}
+.container .content.disable{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.content .controls{
+    border:1px soild #999;
+    width: calc(100% / 2 - 5px);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: prompt;
+}
+.content .controls select{
+    outline: 0;
+    border:0;
+    width: 100%;
+    font-size: 16px;
+}
+.container button{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    background: rgb(31, 221, 31);
+    color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: prompt;
+}
